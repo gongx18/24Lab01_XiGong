@@ -16,7 +16,8 @@ public:
     void setWidth(double);          // mutator for width
     void setLength(double);         // mutator for length
 
-    // DECLARE (const) METHOD TO RETURN AREA OF RECTANGLE
+    // DECLARE (const) METHOD TO RETURN AREA OF RECTANGL
+    double area() const; 
     
 
 private:
@@ -47,7 +48,9 @@ void Rectangle::setLength(double l) {
 }
 
 // IMPLEMENT THE AREA METHOD HERE
-
+double Rectangle::area() const{
+  return width*length; 
+}
 
 
 
@@ -64,8 +67,10 @@ int main() {
     const Rectangle floor(width, length); // note: const object
 
     // RESET Rectangle NAMED "rug" FOR SIZES INPUT BY USER
-    
-    
+    cout << "enter width and length of rug: ";
+    cin >> width >> length; 
+    rug.setWidth(width);
+    rug.setLength(length);   
     
     // DO NOT CHANGE ANYTHING BELOW (if you do, you will earn 0 points,
     // no matter what submit.cs says is your "tentative" score)
