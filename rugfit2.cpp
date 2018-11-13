@@ -1,5 +1,9 @@
 // rugfit2.cpp - calculates fit of rug to a floor
+<<<<<<< HEAD
 // Yijie Gong 10/26/2018
+=======
+// YOUR NAME(S), TODAY'S DATE
+>>>>>>> 8a55cf9fff6b09ed0e2cb02b0781debe61e94be0
 
 #include <iostream>
 using namespace std;
@@ -16,8 +20,12 @@ public:
     void setWidth(double);          // mutator for width
     void setLength(double);         // mutator for length
 
+<<<<<<< HEAD
     // DECLARE (const) METHOD TO RETURN AREA OF RECTANGL
     double area() const; 
+=======
+    // DECLARE (const) METHOD TO RETURN AREA OF RECTANGLE
+>>>>>>> 8a55cf9fff6b09ed0e2cb02b0781debe61e94be0
     
 
 private:
@@ -48,9 +56,13 @@ void Rectangle::setLength(double l) {
 }
 
 // IMPLEMENT THE AREA METHOD HERE
+<<<<<<< HEAD
 double Rectangle::area() const{
   return width*length; 
 }
+=======
+
+>>>>>>> 8a55cf9fff6b09ed0e2cb02b0781debe61e94be0
 
 
 
@@ -67,10 +79,15 @@ int main() {
     const Rectangle floor(width, length); // note: const object
 
     // RESET Rectangle NAMED "rug" FOR SIZES INPUT BY USER
+<<<<<<< HEAD
     cout << "enter width and length of rug: ";
     cin >> width >> length; 
     rug.setWidth(width);
     rug.setLength(length);   
+=======
+    
+    
+>>>>>>> 8a55cf9fff6b09ed0e2cb02b0781debe61e94be0
     
     // DO NOT CHANGE ANYTHING BELOW (if you do, you will earn 0 points,
     // no matter what submit.cs says is your "tentative" score)
